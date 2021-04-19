@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-android-tv",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Cordova plugin that augments your application's Manifest.xml with Android TV bits and pieces.",
   "cordova": {
     "id": "cordova-plugin-android-tv",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/frontyard/cordova-plugin-android-tv.git"
+    "url": "git+https://github.com/mitxp/cordova-plugin-android-tv.git"
   },
   "keywords": [
     "ecosystem:cordova",
@@ -27,12 +27,12 @@
       "version": ">=4.0.0"
     }
   ],
-  "author": "Nedim Cholich",
+  "author": "Johannes Schmid",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/frontyard/cordova-plugin-android-tv/issues"
+    "url": "https://github.com/mitxp/cordova-plugin-android-tv/issues"
   },
-  "homepage": "https://github.com/frontyard/cordova-plugin-android-tv#readme",
+  "homepage": "https://github.com/mitxp/cordova-plugin-android-tv#readme",
   "devDependencies": {
     "jshint": "^2.9.0"
   }
