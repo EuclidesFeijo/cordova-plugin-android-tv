@@ -2,7 +2,7 @@
 <plugin xmlns="http://cordova.apache.org/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
     id="cordova-plugin-android-tv"
-    version="1.0.0">
+    version="1.0.4">
 
     <name>AndroidTVPlugin</name>
     <description>Cordova Android TV Plugin</description>
