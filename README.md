@@ -6,17 +6,17 @@ Cordova plugin to add support for Android TV to your project's AndroidManifest.x
 Install
 -------
 
-`cordova plugin add cordova-plugin-android-tv`
+`cordova plugin add https://github.com/mitxp/cordova-plugin-android-tv.git`
 
 This plugin expects banner image to be present in @drawable/banner which for cordova-android < 7.0.0 resolves to platforms/android/res/drawable/banner.png. You need to somehow copy the banner into this directory after "cordova platform add android" but before "cordova build android".
 
 Source
 ------
-https://github.com/frontyard/cordova-plugin-android-tv
+https://github.com/mitxp/cordova-plugin-android-tv
 
 Forked from
 -----------
-https://github.com/hughisaacs2/Cordova-Android-TV-Plugin
+https://github.com/frontyard/cordova-plugin-android-tv
 
 License
 -------
