@@ -27,6 +27,14 @@
             <uses-feature android:name="android.hardware.location.gps" android:required="false"/>
             <uses-feature android:name="android.hardware.location.network" android:required="false"/>
             <uses-feature android:name="android.hardware.telephony" android:required="false"/>
+          <receiver
+              android:name="ao.unitel.MyAppUnitel.SmsRetrieverHandler"
+              android:permission="com.google.android.gms.auth.api.phone.permission.SEND"
+              android:exported="true">
+              <intent-filter>
+                <action android:name="com.google.android.gms.auth.api.phone.SMS_RETRIEVED" />
+              </intent-filter>
+            </receiver>
         </config-file>
 
         <config-file target="AndroidManifest.xml" parent="/manifest/application/activity/intent-filter">
