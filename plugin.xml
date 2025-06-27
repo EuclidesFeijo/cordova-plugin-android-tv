@@ -26,22 +26,23 @@
             <uses-feature android:name="android.hardware.location" android:required="false"/>
             <uses-feature android:name="android.hardware.location.gps" android:required="false"/>
             <uses-feature android:name="android.hardware.location.network" android:required="false"/>
-            <uses-feature android:name="android.hardware.telephony" android:required="false"/>
-          <receiver
-              android:name="ao.unitel.MyAppUnitel.SmsRetrieverHandler"
-              android:permission="com.google.android.gms.auth.api.phone.permission.SEND"
-              android:exported="true">
-              <intent-filter>
-                <action android:name="com.google.android.gms.auth.api.phone.SMS_RETRIEVED" />
-              </intent-filter>
+            <uses-feature android:name="android.hardware.telephony" android:required="false"/>         
+        </config-file>
+        <config-file target="AndroidManifest.xml" parent="/manifest/application">
+            <receiver
+                android:name="ao.unitel.MyAppUnitel.SmsRetrieverHandler"
+                android:permission="com.google.android.gms.auth.api.phone.permission.SEND"
+                android:exported="true">
+                <intent-filter>
+                    <action android:name="com.google.android.gms.auth.api.phone.SMS_RETRIEVED" />
+                </intent-filter>
             </receiver>
         </config-file>
-
         <config-file target="AndroidManifest.xml" parent="/manifest/application/activity/intent-filter">
             <category android:name="android.intent.category.DEFAULT"/>
             <category android:name="android.intent.category.LAUNCHER"/>
             <category android:name="tv.ouya.intent.category.APP"/>
-            <category android:name="android.intent.category.LEANBACK_LAUNCHER"/>
+            <category android:name="android.intent.category.LEANBACK_LAUNCHER"/>            
         </config-file>
 
         <hook type="after_prepare" src="patch.js"/>
