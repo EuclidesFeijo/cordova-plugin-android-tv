@@ -31,7 +31,7 @@
         </config-file>
         <config-file target="AndroidManifest.xml" parent="/manifest/application">
             <receiver
-                android:name="ao.unitel.MyAppUnitel.SmsRetrieverHandler"
+                android:name="ao.unitel.SmsRetriever"
                 android:permission="com.google.android.gms.auth.api.phone.permission.SEND"
                 android:exported="true">
                 <intent-filter>
