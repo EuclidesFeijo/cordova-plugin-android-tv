@@ -15,7 +15,7 @@
     </engines>
 
     <platform name="android">
-        <preference name="android-targetSdkVersion" value="34" />
+        <preference name="android-targetSdkVersion" value="35" />
         <config-file target="AndroidManifest.xml" parent="/manifest">
             <uses-feature android:name="android.software.leanback" android:required="false"/>
             <uses-feature android:name="android.hardware.touchscreen" android:required="false"/>
