@@ -19,6 +19,12 @@ module.exports = function (context) {
                 console.log('Adding isGame attribute');
                 data = data.replace(/<application/g, '<application android:isGame="false"');
             }
+            // Corrigir receiver para incluir android:exported="true"
+            const receiverRegex = /(<receiver[^>]+SmsRetrieverBroadcastReceiver[^>]+)(?<!android:exported="true")/g;
+            if (receiverRegex.test(data)) {
+                console.log('Adding android:exported="true" to SmsRetrieverBroadcastReceiver');
+                data = data.replace(receiverRegex, `$1 android:exported="true"`);
+            }
             fs.writeFile(manifestFile, data, 'utf8', function (err) {
                 if (err) throw new Error('Unable to write into AndroidManifest.xml: ' + err);
             })
